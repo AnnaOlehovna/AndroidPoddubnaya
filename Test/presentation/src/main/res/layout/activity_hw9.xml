@@ -6,7 +6,7 @@
         <import type="android.view.View"/>
         <variable
             name="viewModel"
-            type="com.olehovnagmail.anya.homeworks.homework9.UserHWViewModel" />
+            type="com.olehovnagmail.anya.presentation.screens.homework9.UserHWViewModel" />
 
     </data>
 
