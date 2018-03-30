@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import
+            alias="View"
+            type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.olehovnagmail.anya.presentation.screens.homework6.WeatherViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_weather_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@{viewModel.centerName}"
+            android:textColor="#e91a66"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            tools:hint="weather center" />
+
+        <EditText
+            android:id="@+id/find_weather"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/searching"
+            android:paddingStart="10dp"
+            android:text="@={viewModel.text}"
+            android:textChangedListener="@{viewModel.textWatcher}"
+            android:theme="@style/MyEditText"
+
+            />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:visibility="@{viewModel.progressBar?View.VISIBLE : View.GONE}" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_hw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</layout>

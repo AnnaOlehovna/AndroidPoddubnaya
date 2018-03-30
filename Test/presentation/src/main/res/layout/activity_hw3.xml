@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.olehovnagmail.anya.presentation.screens.homework3.HW3ViewModel"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="URL"
+        android:text="@={viewModel.textFromEdittext}"
+
+
+        />
+
+    <Button
+        android:id="@+id/buttonget3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/link"
+        android:layout_alignEnd="@id/link"
+        android:text="@string/getpicture"
+        android:onClick="@{viewModel::onClick}"
+        />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/link"
+        android:layout_toStartOf="@id/buttonget3"
+        android:layout_marginEnd="20dp"
+        android:textColor="#0514b3"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@{viewModel.text}"
+        />
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/buttonget3"
+        android:src="@{viewModel.urlImage}"
+        />
+
+</RelativeLayout>
+
+
+</LinearLayout>
+</layout>

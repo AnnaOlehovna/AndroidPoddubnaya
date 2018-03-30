@@ -1,0 +1,99 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsSdkVersion
+
+    defaultConfig {
+
+        applicationId "com.olehovnagmail.anya.classworks.classwork1"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    flavorDimensions "typeVersion"
+    productFlavors {
+        dev{
+            dimension "typeVersion"
+             buildConfigField "String","API_URL","\"https://api.backendless.com/211E03F7-45E3-C81A-FF0D-C31C3EB07C00/9D4E87D9-BC56-9CDA-FF2F-16247CFF6300/\""
+            buildConfigField "String", "API_ENDPOINT", "\"there is smth for dev HW3\""
+        }
+
+        live{
+            dimension "typeVersion"
+            buildConfigField "String","API_URL","\"https://api.backendless.com/211E03F7-45E3-C81A-FF0D-C31C3EB07C00/9D4E87D9-BC56-9CDA-FF2F-16247CFF6300/\""
+            buildConfigField "String", "API_ENDPOINT", "\"there is smth for live HW3\""
+        }
+
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+
+    def dependency = rootProject.ext.dependencies
+
+    implementation dependency.supportAppcompat
+    implementation dependency.supportV4
+    implementation dependency.supportDesing
+
+    implementation dependency.archComponentExtention
+    annotationProcessor dependency.archComponentCompiler
+
+    annotationProcessor dependency.androidBindingCompiler
+
+    implementation dependency.rxAndroid
+
+    implementation dependency.dagger
+    annotationProcessor dependency.daggerCompiler
+
+
+
+    api project(path: ':data')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    //leakcanary
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+
+    //RxPermission
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    //RxBinding
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.1.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.1.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding-design:2.1.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:2.1.1'
+    compile 'com.jakewharton.rxbinding2:rxbinding-leanback-v17:2.1.1'
+
+
+}

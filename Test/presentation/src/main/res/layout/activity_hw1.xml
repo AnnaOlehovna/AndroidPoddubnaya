@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.olehovnagmail.anya.presentation.screens.homework1.HW1ViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#d7e1f4"
+            android:textColor="@color/colorAccent"
+            android:text="@{viewModel.textView1}"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:onClick="@{viewModel::onClick}"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#e7d7f4"
+            android:textColor="@color/colorPrimary"
+            android:text="@{viewModel.textView2}"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:onClick="@{viewModel::onClick}"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change"
+            android:onClick="@{viewModel::onClick}"/>
+
+    </LinearLayout>
+
+</layout>

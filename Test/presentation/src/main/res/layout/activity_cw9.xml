@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+
+        <variable
+            name="myEntity"
+            type="com.olehovnagmail.anya.classworks.classwork9.MyEntity" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#d7e1f4"
+            android:text="@{myEntity.text}"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cff5b3"
+            android:onClick="@{myEntity::buttonClick}"
+            android:text="@{myEntity.textButton}"
+            android:visibility="@{myEntity.buttonVisible ? View.VISIBLE : View.GONE}" />
+
+    </LinearLayout>
+
+</layout>

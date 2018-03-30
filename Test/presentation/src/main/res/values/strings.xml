@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="textView1">Text number 1</string>
+
+    <string name="textView2">Text number 2</string>
+
+    <string name="change">Change</string>
+
+
+    <string name="to_cw2">to CW 2</string>
+    <string name="to_cw3">to CW 3</string>
+    <string name="to_cw4">to CW 4</string>
+    <string name="to_cw5">to CW 5</string>
+    <string name="to_cw6">to CW 6</string>
+    <string name="to_cw7">to CW 7</string>
+    <string name="to_cw8">to CW 8</string>
+    <string name="to_cw9">to CW 9</string>
+    <string name="to_cw10">to CW 10</string>
+
+    <string name="button_two">Button two</string>
+
+    <string name="email">Email</string>
+
+    <string name="password">Password</string>
+
+    <string name="getpicture">Get</string>
+
+    <string name="linkForPicture">
+        https://ptzgovorit.ru/sites/default/files/styles/885x100proc/public/insert_images/-gle7n-jy8u.jpg?itok=i5KpNzAT</string>
+
+    <string name="parse_xml">XML File</string>
+    <string name="parse_json">JSON File</string>
+
+    <string name="searching">Search</string>
+
+    <string name="add_user">Add new User</string>
+    <string name="save_user">Save</string>
+    <string name="edit_user">Edit</string>
+    <string name="delete_user">Delete</string>
+
+
+    <string name="user_name">User name</string>
+    <string name="user_age">User age</string>
+    <string name="user_id">ID</string>
+    <string name="user_image">Image URL</string>
+
+</resources>

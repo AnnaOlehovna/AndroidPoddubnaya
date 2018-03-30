@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="textView1">Text number 1</string>
+
+    <string name="textView2">Text number 2</string>
+
+    <string name="button1">Change</string>
+
+    <string name="button_one">Кнопка один</string>
+
+    <string name="button_two">Кнопка два</string>
+
+</resources>

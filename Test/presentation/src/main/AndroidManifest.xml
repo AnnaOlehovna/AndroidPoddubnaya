@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.olehovnagmail.anya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".classworks.classwork1.CW1Activity" />
+
+
+        <activity
+            android:name=".classworks.classwork2.CW2Activity"
+            android:parentActivityName=".classworks.classwork1.CW1Activity" />
+
+        <activity android:name=".classworks.classwork3.CW3Activity" />
+
+        <activity android:name=".homeworks.HomeWorksAllActivity" />
+
+        <activity android:name=".presentation.screens.homework1.HW1Activity"/>
+        <activity android:name=".presentation.screens.homework2.HW2Activity"/>
+        <activity android:name=".presentation.screens.homework3.HW3Activity"/>
+
+
+        <activity android:name=".classworks.classwork4.CW4Activity" />
+
+        <activity android:name=".classworks.classwork5.CW5Activity" />
+
+
+        <receiver android:name=".classworks.classwork5.MyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".classworks.classwork5.MyService" />
+        <service android:name=".classworks.classwork5.MyIntentService" />
+
+        <activity android:name=".presentation.screens.homework4.HW4Activity" />
+
+        <activity android:name=".classworks.classwork6.CW6Activity" />
+        <activity android:name=".classworks.classwork7.CW7Activity" />
+        <activity android:name=".classworks.classwork8.CW8Activity" />
+
+        <activity android:name=".presentation.screens.homework5.HW5Activity" />
+        <activity android:name=".presentation.screens.homework6.HW6ActivityOne" />
+
+        <service android:name=".presentation.screens.homework5.HW5Service" />
+
+
+        <activity android:name=".presentation.screens.homework6.HW6ActivityTwo" />
+        <activity android:name=".homeworks.homework7.HW7Activity" />
+        <activity android:name=".homeworks.homework8.HW8Activity"/>
+
+        <activity android:name=".classworks.classwork9.CW9Activity"/>
+
+        <activity android:name=".homeworks.homework9.HW9Activity"/>
+
+
+
+    </application>
+</manifest>

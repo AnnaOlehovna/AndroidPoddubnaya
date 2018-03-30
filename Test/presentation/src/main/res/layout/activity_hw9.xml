@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.olehovnagmail.anya.homeworks.homework9.UserHWViewModel" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@{viewModel.isMan? @color/isManBack :@color/isWomanBack}"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+           android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@{viewModel.imageUrl}"/>
+
+        <TextView
+
+            android:id="@+id/textSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.surnameName}"
+            android:textColor="@{viewModel.isMan ? @color/isManText : @color/isWomanText}"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/textFirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.firstName}"
+            android:textColor="@{viewModel.isMan ? @color/isManText : @color/isWomanText}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textSecondname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.secondName}"
+            android:textColor="@{viewModel.isMan ? @color/isManText : @color/isWomanText}"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.age}"
+            android:textColor="@{viewModel.isMan ? @color/isManText : @color/isWomanText}"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</layout>
