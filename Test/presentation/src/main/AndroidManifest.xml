@@ -33,7 +33,7 @@
 
         <activity android:name=".classworks.classwork3.CW3Activity" />
 
-        <activity android:name=".homeworks.HomeWorksAllActivity" />
+        <activity android:name=".presentation.screens.HomeWorksAllActivity" />
 
         <activity android:name=".presentation.screens.homework1.HW1Activity"/>
         <activity android:name=".presentation.screens.homework2.HW2Activity"/>
@@ -67,12 +67,12 @@
 
 
         <activity android:name=".presentation.screens.homework6.HW6ActivityTwo" />
-        <activity android:name=".homeworks.homework7.HW7Activity" />
-        <activity android:name=".homeworks.homework8.HW8Activity"/>
+        <activity android:name=".presentation.screens.homework7.HW7Activity" />
+        <activity android:name=".presentation.screens.homework8.HW8Activity"/>
 
         <activity android:name=".classworks.classwork9.CW9Activity"/>
 
-        <activity android:name=".homeworks.homework9.HW9Activity"/>
+        <activity android:name=".presentation.screens.homework9.HW9Activity"/>
 
 
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.olehovnagmail.anya.classworks.classwork1.CW1Activity;
-import com.olehovnagmail.anya.homeworks.HomeWorksAllActivity;
+import com.olehovnagmail.anya.presentation.screens.HomeWorksAllActivity;
 
 
 public class MyActivity extends AppCompatActivity {
