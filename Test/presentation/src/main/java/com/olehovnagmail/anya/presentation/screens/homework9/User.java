@@ -1,4 +1,4 @@
-package com.olehovnagmail.anya.homeworks.homework9;
+package com.olehovnagmail.anya.presentation.screens.homework9;
 
 
 public class User {

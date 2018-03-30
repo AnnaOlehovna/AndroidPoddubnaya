@@ -1,4 +1,4 @@
-package com.olehovnagmail.anya.homeworks.homework7;
+package com.olehovnagmail.anya.presentation.screens.homework7;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.olehovnagmail.anya.R;
 
-import io.reactivex.Observable;
-import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.PublishSubject;
 
 public class HW7Activity extends AppCompatActivity implements PublishContractHW {

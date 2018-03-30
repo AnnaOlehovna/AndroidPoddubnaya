@@ -1,4 +1,4 @@
-package com.olehovnagmail.anya.homeworks.homework7;
+package com.olehovnagmail.anya.presentation.screens.homework7;
 
 import android.app.Activity;
 import android.content.Context;

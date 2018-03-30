@@ -1,18 +1,15 @@
-package com.olehovnagmail.anya.homeworks.homework9;
+package com.olehovnagmail.anya.presentation.screens.homework9;
 
 
 import android.databinding.BindingAdapter;
 import android.databinding.ObservableBoolean;
 import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import com.olehovnagmail.anya.presentation.base.BaseViewModel;
-
-import java.util.concurrent.TimeUnit;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;

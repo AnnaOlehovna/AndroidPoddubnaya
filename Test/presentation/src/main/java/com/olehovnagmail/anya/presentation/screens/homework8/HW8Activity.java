@@ -1,8 +1,7 @@
-package com.olehovnagmail.anya.homeworks.homework8;
+package com.olehovnagmail.anya.presentation.screens.homework8;
 
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;

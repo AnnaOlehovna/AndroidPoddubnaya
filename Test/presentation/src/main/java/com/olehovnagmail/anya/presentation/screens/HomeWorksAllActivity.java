@@ -1,4 +1,4 @@
-package com.olehovnagmail.anya.homeworks;
+package com.olehovnagmail.anya.presentation.screens;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,9 +13,9 @@ import com.olehovnagmail.anya.R;
 import com.olehovnagmail.anya.presentation.screens.homework4.HW4Activity;
 import com.olehovnagmail.anya.presentation.screens.homework5.HW5Activity;
 import com.olehovnagmail.anya.presentation.screens.homework6.HW6ActivityOne;
-import com.olehovnagmail.anya.homeworks.homework7.HW7Activity;
-import com.olehovnagmail.anya.homeworks.homework8.HW8Activity;
-import com.olehovnagmail.anya.homeworks.homework9.HW9Activity;
+import com.olehovnagmail.anya.presentation.screens.homework7.HW7Activity;
+import com.olehovnagmail.anya.presentation.screens.homework8.HW8Activity;
+import com.olehovnagmail.anya.presentation.screens.homework9.HW9Activity;
 import com.olehovnagmail.anya.presentation.screens.homework1.HW1Activity;
 import com.olehovnagmail.anya.presentation.screens.homework2.HW2Activity;
 import com.olehovnagmail.anya.presentation.screens.homework3.HW3Activity;
