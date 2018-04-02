@@ -19,7 +19,7 @@
        android:layout_width="80dp"
        android:layout_height="80dp"
        android:layout_gravity="center_vertical"
-       android:src="@{viewModel.title}"/>
+       android:src ="@{viewModel.imageRes}"/>
 
     <LinearLayout
         android:layout_width="match_parent"
